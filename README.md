@@ -1,36 +1,59 @@
-# Ouvidoria
-Projeto de Ouvidoria - Fase 2
+# Projeto Ouvidoria-Fase 3
 
-Alunos:
-- Flávia Amorim
-- João Vitor
-- Jonathan Gois
+### ALUNOS:
+
 - Kleiton Ferreira
+- João Vitor
+- Flávia Amorim
+- José Sandro 
 - Sabrina Marques
-- Sandro Ramos
+- Jonathan Gois
 
-Observações:
+### DESCRIÇÃO BÁSICA DOS ARQUIVOS
 
-1) No MySQL Wokbench, cria o schema chamado "ouvidoria" com as seguintes tabelas:
+Essa fase do projeto é composta por três arquivos em Python que funcionam em conjunto: ouvidoria3, metodos, operacoesbd.
+
+ **ouvidoria3:** se trata de um código, em Python, que executa um menu de opções para um portal de ouvidoria. Ele importa as funções contidas no arquivo externo chamado "metodos".
+
+**metodos:** diz respeito a um conjunto de funções necessárias para executar o programa de ouvidoria de uma universidade (poderia ser para qualquer tipo de empresa, pessoa física ou jurídica, como um hospital, uma loja de brinquedos, etc. O tipo de estabelecimento dependeria do cliente, mas nesse caso, escolhemos ficticiamente, uma universidade) que permite aos usuários inserir e visualizar reclamações, elogios e sugestões. Esse programa importa outro conjunto de funções para efetuar operações no banco de dados através do arquivo “operacoesbd”.
+ 
+**operacoesbd:** conjunto de funções Python que permitem a conexão dos dois códigos dos arquivos “ouvidoria3” e “metodos” a um banco de dados MySQL para realizar os comandos de inserir, listar, pesquisar e excluir manifestações no banco de dados.
+
+
+### PREPARAÇÃO BÁSICA DO PROGRAMA
+
+**1)** No MySQL Wokbench, criar  um schema chamado **‘ouvidoria’** com as seguintes tabelas:
 
 create table reclamacoes (
+
 codigo int auto_increment,
+
 reclamacao varchar (1000),
+
 primary key (codigo)
 
 );
 
 create table elogios_sugestoes (
+
 codigo int auto_increment,
+
 elogio_sugestao varchar (1000),
+
 primary key (codigo)
 
 );
 
+**2)** Com o aquivo ‘ouvidoria3.py’ aberto no pycharm, trocar a senha do MySQL Workbench pela senha do MySQL em uso, na hora de executar o código, para estabelecer a conexão entre o Pycharm e o MySQL.
 
-2) Trocar a senha do MySQL Workbench, no aquivo ouvidoria.py (código pricipal), pela senha do MySQL em uso na hora de rodar o código para estabelecer a conexão entre o Pycharm e o MySQL.
+**3)** Com o arquivo ‘operacoesbd’ aberto no Pycharm, passar o cursor do mouse sobre “mysql.connector” na primeira linha, onde está sublinhado na cor vermelha, e clicar em  “Install package mysql”. Como na imagem abaixo.
 
-3) Copiar o arquivo operacoesbd.py para a pasta do projeto, para poder rodar o código integrado ao MySQL.
+**4)** Após o término da instalação mencionada anteriormente, aponte o cursor do mouse, novamente, em “mysql.connector” na primeira linha que ainda está com sublinha vermelha e dê um clique. Em seguida, aparecerá um ícone de lâmpada vermelha na linha dois, clique na lâmpada e e selecione a segunda opção para instalar o pacote do conector python para mysql. Imagem a seguir.
 
-4) Utilizamos o código “Try Except” para evitar erros ao digitar floats e strings nas opções de input.
+
+Ao fim da segunda instalação, o programa estará preparado para ser executado.
+
+**Observação:** os procedimentos de instalação acima só devem ser feitos caso os pacotes ainda não estejam instalados. Se estiverem instalados, não aparecerá a sublinha vermelha em “mysql.connector.
+
+**Observação 2:** utilizamos o código “try except” para evitar erros ao digitar floats, strings e qualquer outra digitação que não seja um número inteiro nas opções de input.
 
