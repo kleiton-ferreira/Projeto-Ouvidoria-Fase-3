@@ -13,7 +13,7 @@
 
 Essa fase do projeto é composta por três arquivos em Python que funcionam em conjunto: ouvidoria3, metodos, operacoesbd.
 
- **ouvidoria3:** se trata de um código, em Python, que executa um menu de opções para um portal de ouvidoria. Ele importa as funções contidas no arquivo externo chamado "metodos".
+ **ouvidoria3:** se trata de um código, em Python, que executa um menu de opções para um portal de ouvidoria. Ele funciona como um arquivo main que importa todas as funções contidas no arquivo externo chamado "metodos".
 
 **metodos:** diz respeito a um conjunto de funções necessárias para executar o programa de ouvidoria de uma universidade (poderia ser para qualquer tipo de empresa, pessoa física ou jurídica, como um hospital, uma loja de brinquedos, etc. O tipo de estabelecimento dependeria do cliente, mas nesse caso, escolhemos ficticiamente, uma universidade) que permite aos usuários inserir e visualizar reclamações, elogios e sugestões. Esse programa importa outro conjunto de funções para efetuar operações no banco de dados através do arquivo “operacoesbd”.
  
