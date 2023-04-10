@@ -52,6 +52,7 @@ primary key (codigo)
 
 **4)** Após o término da instalação mencionada anteriormente, aponte o cursor do mouse, novamente, em “mysql.connector” na primeira linha que ainda está com sublinha vermelha e dê um clique. Em seguida, aparecerá um ícone de lâmpada vermelha na linha dois, clique na lâmpada e e selecione a segunda opção para instalar o pacote do conector python para mysql. Imagem a seguir.
 
+![Imagem2](https://user-images.githubusercontent.com/127905306/231015996-30988d21-f96f-4007-83ba-48b40d79c3ff.png)
 
 Ao fim da segunda instalação, o programa estará preparado para ser executado.
 
