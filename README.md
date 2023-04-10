@@ -48,6 +48,8 @@ primary key (codigo)
 
 **3)** Com o arquivo ‘operacoesbd’ aberto no Pycharm, passar o cursor do mouse sobre “mysql.connector” na primeira linha, onde está sublinhado na cor vermelha, e clicar em  “Install package mysql”. Como na imagem abaixo.
 
+![Imagem1](https://user-images.githubusercontent.com/127905306/231015356-09ad1c2a-b2fe-4e76-a29b-b3622eeecc61.png)
+
 **4)** Após o término da instalação mencionada anteriormente, aponte o cursor do mouse, novamente, em “mysql.connector” na primeira linha que ainda está com sublinha vermelha e dê um clique. Em seguida, aparecerá um ícone de lâmpada vermelha na linha dois, clique na lâmpada e e selecione a segunda opção para instalar o pacote do conector python para mysql. Imagem a seguir.
 
 
